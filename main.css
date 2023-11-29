@@ -61,3 +61,19 @@ body{
     height: 10em;
     border-radius: 50%;
 }
+
+
+@media (max-width: 1400px) {
+    #bootstrap-themes{
+        width: 70%;
+    }
+    body {
+        background-position: 50%;
+    }
+}
+
+/* @media (max-width: 450px) {
+    body {
+
+    }
+} */
