@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="header" class="container-fluid text-start p-3 mb-3">
+        <a href="index.html" class="link p-lg-4 p-md-3"> Bootstrap 5</a>
+        <a href="company.html" class="link p-lg-4 p-md-3"> Розробники</a>
+        <a href="actuality.html" class="link p-lg-4 p-md-3"> Актуальність</a>
+        <a href="about.html" class="link disabled p-lg-4 p-md-3"> Питання</a>
+    </div>
+    
+    <div class="container-md">
+        <h1><span class="tab">Питання</span></h1>
+        <p><span class="tab">Якщо у вас виникли якісь питання, будь-ласка заповніть цю форму та відправте її. Ми відповімо вам так швидко, як ми можемо.</span></p>
+        <form method="post" onsubmit="return checkForm(this)" class="mb-3" id="main_form">
+            <label for="emailInput" class="form-label">Email адреса</label>
+            <input type="email" class="form-control" id="emailInput" name="user_email" placeholder="name@example.com" required>
+            
+            <label for="nameInput" class="form-label">Ваше ім'я</label>
+            <input type="text" class="form-control" id="nameInput" name="user_name" placeholder="Наприклад, Іван" required>
+            
+            <label for="questionInput" class="form-label">Ваше питання</label>
+            <textarea class="form-control mb-3" name="user_question" placeholder="Напишіть тут" id="questionInput" required></textarea>
+            <button type="submit" class="btn btn-primary">Відправити форму</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
