@@ -72,8 +72,10 @@ body{
     }
 }
 
-/* @media (max-width: 450px) {
+@media (max-width: 700px) {
     body {
-
+        background-image: url(https://i.imgur.com/Cun2wwf.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-} */
+} 
